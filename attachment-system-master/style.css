@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  body {
+    background: url(images/back.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  header {
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #800000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    position: relative;
+  }
+  header .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #fff;
+  }
+  header .navbar ul {
+    list-style: none;
+  }
+  header .navbar ul li {
+    position: relative;
+    float: left;
+  }
+  header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+  }
+  header .navbar ul li a:hover {
+    background: orange;
+    color: #fff;
+  }
+  header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 250px;
+    background: #800000;
+    display: none;
+  }
+  header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  header .navbar ul li:focus-within > ul,
+  header .navbar ul li:hover > ul {
+    display: initial;
+  }
+  .maincontent{
+    height: 500PX;
+    position: relative;
+    bottom: 54px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 200px;
+    border-radius: 10px;
+    padding: 25px;
+  }
+  footer{
+    position: relative;
+  }
+   
+  @media (max-width: 991px) {
+    header {
+      padding: 20px;
+    }
+    header label {
+      display: initial;
+    }
+    header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #800000;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      display: none;
+    }
+    header .navbar ul li {
+      width: 100%;
+    }
+    header .navbar ul li ul {
+      position: relative;
+      width: 100%;
+    }
+    #menu-bar:checked ~ .navbar {
+      display: initial;
+    }
+  }
+  
+  /* styling the contents of the mainbodycontent */
+  /* border-radius:radius of the element's corners. */
+  .maincontent {
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 70%;
+    background-color: gray;
+    border-radius: 10px;
+    color: #fff;
+  }
+  .maincontent .contentdetail {
+    left: 2%;
+  }
+  .maincontent h3 {
+    text-align: center;
+    padding: 10px;
+    color: orange;
+  }
+  .maincontent p {
+    font-size: 18px;
+  }
+  .maincontent .info1 {
+    padding: 10px;
+  }
+  .maincontent .info2 {
+    padding: 10px;
+  }
+  .maincontent .info3 {
+    padding: 10px;
+  }
+  .maincontent .info1 .info2 .info3:hover {
+    background-color: yellow;
+  }
+  
+  /* styling the footer section */
+  footer {
+    box-sizing: border-box;
+    bottom: 0px;
+    width: 100%;
+    background: #800000;
+    color: #fff;
+  }
+  /* makes the element behave like a table.  */
+  .main-content {
+    display: table;
+    table-layout: fixed;
+  }
+  .main-content .box {
+    display: table-cell;
+    padding: 10px 20px;
+  }
+  .box h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .box .content {
+    margin: 20px 0 0 0;
+  }
